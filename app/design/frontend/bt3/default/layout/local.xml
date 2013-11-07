@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<layout version="0.1.0">
+    <default translate="label" module="page">
+        <reference name="head">
+            <action method="addCss"><stylesheet>css/bootstrap.css</stylesheet></action>
+            <action method="addCss"><stylesheet>css/style.css</stylesheet></action>
+            <action method="addItem"><type>skin_js</type><name>js/html5shiv.js</name><params/><if>lt IE 9</if></action>
+            <action method="addItem"><type>skin_js</type><name>js/respond.min.js</name><params/><if>lt IE 9</if></action>
+        </reference>
+        <reference name="before_body_end">
+            <block type="page/html_head" name="bottom" as="bottom" template="page/html/footer_scripts.phtml">
+                <action method="addItem"><type>skin_js</type><name>js/jquery.js</name></action>
+                <action method="addItem"><type>skin_js</type><name>js/noconflict.js</name></action>
+                <action method="addItem"><type>skin_js</type><name>js/bootstrap.min.js</name></action>
+            </block>
+        </reference>
+    </default>
+</layout>
