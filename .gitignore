@@ -1,0 +1,12 @@
+.DS_Store
+var/*
+app/etc/local.xml
+media/*
+downloader/*
+nbproject
+/.settings
+/media
+/var
+/.buildpath
+/.project
+/.idea/
