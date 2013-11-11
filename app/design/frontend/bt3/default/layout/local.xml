@@ -12,6 +12,14 @@
         <reference name="header">
             <block type="catalog/navigation" name="hp_nav" template="catalog/navigation/top.phtml" />
         </reference>
+
+        <reference name="left">
+            <remove name="left.permanent.callout" />
+        </reference>
+        <reference name="right">
+            <remove name="right.permanent.callout" />
+        </reference>
+
         <reference name="before_body_end">
             <block type="page/html_head" name="bottom" as="bottom" template="page/html/footer_scripts.phtml">
                 <action method="addItem"><type>skin_js</type><name>js/jquery.js</name></action>
